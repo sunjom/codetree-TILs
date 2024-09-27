@@ -12,12 +12,12 @@ else:
 if(arr.count(num) >= 1):
     check = arr.index(num);
 
-    Bool = False;
-    for i in range(check, len(arr)-1):
-        if(arr[i:i+b] == brr):
-            Bool = True;
-            break
-    if(Bool):
-        print("Yes");
-    else:
-        print("No");
+Bool = False;
+for i in range(check, len(arr)-1):
+    if(arr[i:i+b] == brr):
+        Bool = True;
+        break
+if(Bool):
+    print("Yes");
+else:
+    print("No");
