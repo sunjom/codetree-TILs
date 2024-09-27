@@ -9,10 +9,8 @@ if(b > 1):
 else:
     num = b;
 
-check = arr.index(num);
-
-if(check == -1):
-    print('No');
+if(arr.count(num) >= 1);
+    check = arr.index(num);
 else:
     Bool = False;
     for i in range(check, len(arr)-1):
