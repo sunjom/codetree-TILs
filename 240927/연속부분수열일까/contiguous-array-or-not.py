@@ -1,9 +1,16 @@
 a,b = map(int,input().split());
 
 arr = list(map(int, input().split()));
+
 brr = list(map(int,input().split()));
 
-check = arr.index(brr[0]);
+if(b > 1):
+    num = brr[0];
+else:
+    num = b;
+
+check = arr.index(num);
+
 if(check == -1):
     print('No');
 else:
