@@ -9,7 +9,7 @@ if(b > 1):
 else:
     num = b;
 
-if(arr.count(num) >= 1);
+if(arr.count(num) >= 1):
     check = arr.index(num);
 else:
     Bool = False;
