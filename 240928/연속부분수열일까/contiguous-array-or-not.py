@@ -10,7 +10,7 @@ for i in range(a):
         if i+e >= a:
             Bool = False;
             break;
-        if(arr[i+e] != arr[e]):
+        if(arr[i+e] != brr[e]):
             Bool = False;
             break;
     
