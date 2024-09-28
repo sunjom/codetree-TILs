@@ -10,4 +10,7 @@ max = 0
 for i in range(1,len(nrr)):
     if(nrr[i] ==1):
         max = i;
-print(max);
+if(max == 0):
+    print(-1);
+else:
+    print(max);
