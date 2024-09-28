@@ -11,5 +11,5 @@ for i in range(a):
     
     if(Bool):
         print("Yes");
-        break;
+        sys.exit()
 print("No");
