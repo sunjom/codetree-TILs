@@ -1,4 +1,4 @@
-num = input();
+num = int(input());
 arr = list(map(int,input().split(' ')));
 count = 0;
 i = 0
