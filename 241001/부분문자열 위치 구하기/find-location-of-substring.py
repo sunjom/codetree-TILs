@@ -1,23 +1,18 @@
+import sys;
 Input = input();
 Search = input();
 
 idx = Input[0]
 for i in range(len(Input)):
-    Find = False;
-    if(i + len(Search) > len(Input)):
-        break
     
-    if(Input[i] == Search[i]):
-        idx=i;
-        for e in range(len(Search)):
-            if(not(Input[i+e] == Search[e])):
-                Find=False;
-                break;
-            Find=True;
-    if(Find):
+    if(i + len(Search)-1 >= len(Input)):
         break;
-
-if(Find):
-    print(idx)
-else:
-    print(-1);
+    
+    Find = True;
+    for j in range(len(Search)):
+        if(Input[i+j] != Search[j]):
+            Find= False;
+    if Find:
+        print(i)
+        sys.exit(0)
+print(-1);
