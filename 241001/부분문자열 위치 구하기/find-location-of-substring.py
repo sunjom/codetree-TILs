@@ -5,7 +5,7 @@ num = 0;
 for i in range(len(Input)):
     if(Input[i] == Object[0]):
         num = i;
-        
+        e = 0
         for e in range(1,len(Object)):
             if(Input[e] != Object[e]):
                 break;
