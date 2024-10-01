@@ -1,20 +1,23 @@
 Input = input();
-Object = input();
-clear = False;
-num = 0;
-for i in range(len(Input)):
-    if(Input[i] == Object[0]):
-        num = i;
-        e = 0
-        for e in range(1,len(Object)):
-            if(Input[e] != Object[e]):
-                break;
-        
-        if(e == len(Object)-1):
-            clear=True;
-            break;
+Search = input();
 
-if(clear):
-    print(num);
+idx = Input[0]
+for i in range(len(Input)):
+    Find = False;
+    if(i + len(Search) > len(Input)):
+        break
+    
+    if(Input[i] == Search[i]):
+        idx=i;
+        for e in range(len(Search)):
+            if(not(Input[i+e] == Search[e])):
+                Find=False;
+                break;
+            Find=True;
+    if(Find):
+        break;
+
+if(Find):
+    print(idx)
 else:
     print(-1);
