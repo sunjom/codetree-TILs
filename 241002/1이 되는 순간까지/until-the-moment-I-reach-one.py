@@ -2,7 +2,7 @@ n = int(input());
 
 def Return(n):
     if(n == 1):
-        return;
+        return 0;
     if(n %2 == 0):
         return 1 + Return(n//2) 
     else:
