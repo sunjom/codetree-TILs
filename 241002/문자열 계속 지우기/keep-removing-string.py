@@ -1,7 +1,7 @@
 Input = input()
 Search = input()
 i = 0
-while(i < 10):
+while(i < len(Input)):
     if(i+len(Search) > len(Input)):
         break
     Bool = True
@@ -13,5 +13,6 @@ while(i < 10):
         if(Bool):
             Input = Input[:i] + Input[i+len(Search):]
             i = 0
+            continue
     i+=1
 print(Input);
