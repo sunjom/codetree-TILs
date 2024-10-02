@@ -9,7 +9,7 @@ else:
     elif (b == Cal[1]):
         Str = f"{a} - {c} = {int(a)-int(c)}"
     elif (b == Cal[2]):
-        Str = f"{a} - {c} = {int(a)/int(c)}"
+        Str = f"{a} / {c} = {int(a)/int(c)}"
     elif (b == Cal[3]):
-        Str = f"{a} - {c} = {int(a)*int(c)}"
+        Str = f"{a} * {c} = {int(a)*int(c)}"
 print(Str)
