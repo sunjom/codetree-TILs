@@ -4,4 +4,7 @@ while n >0:
     val = n%2;
     Str += str(val);
     n //=2;
-print(Str[::-1])
+if not Str:
+    print(0);
+else:
+    print(Str[::-1])
