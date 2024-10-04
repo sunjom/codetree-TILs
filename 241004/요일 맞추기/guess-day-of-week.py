@@ -7,7 +7,7 @@ def ReturnDay(n):
         Sum += Date[i];
     return Sum;
 
-State = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
+State = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 diff = (ReturnDay(a) + b ) - (ReturnDay(c) + d);
 
