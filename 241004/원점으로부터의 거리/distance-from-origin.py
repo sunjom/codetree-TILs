@@ -11,7 +11,7 @@ for i in range(1,n+1):
     Arr.append((Distance(x,y),i));
 
 
-Arr.sort(lambda x: (x[0],-x[1]))
+Arr.sort(lambda x: (x[0],x[1]))
 
 for i in Arr:
     print(i[1]);
