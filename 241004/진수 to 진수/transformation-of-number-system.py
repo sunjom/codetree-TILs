@@ -3,8 +3,8 @@ n = list(map(int,input()))
 Sum = 0
 
 for i in range(len(n)):
-    Sum += a * (len(n)-1 -i) * int(n[i]);
-Sum += int(n[-1])
+    Sum += a ** (len(n)-1 -i) * int(n[i]);
+
 arr = []
 while True:
     if(Sum < b):
