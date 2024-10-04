@@ -17,5 +17,5 @@ for i in range(n):
             LatestRain = i;
             continue;
         elif(Arr[LatestRain].day > Arr[i].day):
-            LatestRain = n;
+            LatestRain = i;
 print(Arr[LatestRain].day,Arr[LatestRain].week,Arr[LatestRain].state)
