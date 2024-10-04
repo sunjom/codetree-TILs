@@ -7,6 +7,4 @@ for i in range(1,a):
     aDay += Day[i];
 for i in range(1,c):
     cDay += Day[i];
-print(d)
-print(b)
 print(cDay-aDay+d-b+1);
