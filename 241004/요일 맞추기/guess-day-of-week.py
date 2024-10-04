@@ -9,7 +9,7 @@ def ReturnDay(n):
 
 State = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
 
-diff = (ReturnDay(a) + b ) - (ReturnDay(c) - d);
+diff = (ReturnDay(a) + b ) - (ReturnDay(c) + d);
 
 while diff < 0:
     diff += 7;
