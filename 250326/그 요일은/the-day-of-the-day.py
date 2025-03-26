@@ -10,23 +10,16 @@ idx = weeks.index(A)
 hapA = sum(days[i] for i in range(m1)) + d1 
 hapB = sum(days[i] for i in range(m2)) + d2
 
-count = 0
-
-Sum = hapA - hapB
-
-if(Sum < 0):
-    while Sum < 0:
-        Sum += 7
-        count +=1
-    if(idx < Sum):
-        count -= 1
+Sum = hapB - hapA
+if(Sum <= 0):
+    print(0)
 else:
-    count = Sum // 2 
+    count = Sum // 7 
     Sum %= 7
-    if(idx < Sum):
-        count += 1
 
-print(count)
+    if(idx <= Sum):
+        count += 1
+    print(count)
 
 
     
