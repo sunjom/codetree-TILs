@@ -12,4 +12,4 @@ num = hapB-hapA
 while num < 0:
     num += 7
 
-print(week[num])
+print(week[num%7])
