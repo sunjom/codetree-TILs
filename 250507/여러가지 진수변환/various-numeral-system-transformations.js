@@ -12,6 +12,9 @@ while (true) {
     console.log(n)
     break
   }
+  if (x === 0) {
+    break
+  }
   if (x === 1) {
     answer.push(1)
     break
