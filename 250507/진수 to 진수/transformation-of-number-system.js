@@ -7,7 +7,7 @@ let sum = 0
 const answer = []
 
 for (let i = 0; i < n.length; i++) {
-  sum = sum * 8 + Number(n[i])
+  sum = sum * a + Number(n[i])
 }
 
 let x = sum
