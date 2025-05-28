@@ -5,7 +5,7 @@ public class Main {
     public static void getGCD(int n, int m){
         int GCD = 0;
 
-        for(int i = 1; i < Math.min(n,m) ; i++){
+        for(int i = 1; i <= Math.min(n,m) ; i++){
             if(n% i == 0 && m % i == 0){
                 GCD = i;
             }
