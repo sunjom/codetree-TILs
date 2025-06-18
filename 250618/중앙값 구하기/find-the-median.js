@@ -18,7 +18,7 @@ if(a > b){
         console.log(b);
     }else if(c > a){
         console.log(c);
-    }elses{
+    }else{
         console.log(a);
     }
 }
