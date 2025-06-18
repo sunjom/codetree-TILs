@@ -6,15 +6,19 @@ const b = Number(inputs[1]);
 const c = Number(inputs[2]);
 
 if(a > b){
-    if(a < c){
-        console.log(a);
-    }else if(b < c){
+    if(b > c){
+        console.log(b)
+    }else if(c > a){
+        console.log(a)
+    }else{
         console.log(c);
     }
 }else{
-    if(b < c){
+    if(c > b){
         console.log(b);
-    }else if(a< c){
+    }else if(c > a){
         console.log(c);
+    }elses{
+        console.log(a);
     }
 }
