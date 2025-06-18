@@ -8,13 +8,13 @@ const c = Number(inputs[2]);
 if(a > b){
     if(a < c){
         console.log(a);
-    }else{
+    }else if(b < c){
         console.log(c);
     }
 }else{
     if(b < c){
         console.log(b);
-    }else{
+    }else if(a< c){
         console.log(c);
     }
 }
