@@ -7,9 +7,7 @@ let m = Number(arr[1]);
 
 // Please write your code here.
 
-while(n > m){
+while(n > 0){
     console.log(n);
     n = Math.floor(n/m);
 }
-
-console.log(n);
