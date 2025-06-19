@@ -5,7 +5,7 @@ let A = Number(inputs[0]);
 const B = Number(inputs[1]);
 
 let result = (A + ' ');
-while(A <= B){
+while(A < B){
     if(A % 2 == 1){
         A *=2;
     }else{
