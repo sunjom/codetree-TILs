@@ -6,10 +6,9 @@ const N = Number(input);
 let result = 1;
 
 for(let i = 2 ; i < 101 ; i++){
-    const dummy = result + i;
-    if(dummy >= N){
+    result += i;
+    if(result >= N){
         console.log(i);
         break;
     }
-    result += i;
 }
