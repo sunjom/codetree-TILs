@@ -13,7 +13,7 @@ for(let i = 0 ; i < inputs.length ; i++){
 
 for(let i = 0 ; i < inputs.length ; i++){
     for(let e = 0 ; e <inputs[i].length ; e++){
-        arr[i][e] = *= 3;
+        arr[i][e] *= 3;
     }
 }
 
