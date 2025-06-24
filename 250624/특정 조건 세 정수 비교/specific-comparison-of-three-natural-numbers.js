@@ -9,6 +9,7 @@ for(let i = 2 ; i < c ; i++){
     if(a%i === 0 && b%i === 0 && c % i ===0){
         check = false;
         str += '1 ';
+        break;
     }
 }
 
