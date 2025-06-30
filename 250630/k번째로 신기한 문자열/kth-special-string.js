@@ -10,7 +10,7 @@ for (let i = 0; i < Number(n); i++) {
 
 let idx = 1;
 words.sort();
-const start = words.findIndex(word => word.includes(t))
+const start = words.findIndex(word => word.startsWith(t))
 for(let i = start ; i < n ; i++){
     if(idx == k){
         console.log(words[idx]);
