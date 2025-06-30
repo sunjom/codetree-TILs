@@ -8,14 +8,14 @@ for (let i = 0; i < Number(n); i++) {
 }
 // Please Write your code here.
 
-let idx = 1;
 words.sort();
-const start = words.findIndex(word => word.startsWith(t))
-for(let i = start ; i < n ; i++){
-    if(idx == k){
-        console.log(words[idx]);
-        break;
+let count = 0;
+for (let i = 0; i < words.length; i++) {
+    if (words[i].startsWith(t)) { // ✅ 't'로 시작하는 단어
+        count++;
+        if (count === Number(k)) {
+            console.log(words[i]);
+            break;
+        }
     }
-    idx++;
 }
-
