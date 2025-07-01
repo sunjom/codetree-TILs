@@ -53,9 +53,16 @@ for(let i of movesB){
     }
 }
 
+let check = -1;
 for(let i = 1 ; i < A.length ; i++){
     if(A[i] == B[i]){
-        console.log(i);
+        check = i;
         break;
     }
+}
+
+if(check > 0){
+    console.log(check);
+}else{
+    console.log(-1);
 }
