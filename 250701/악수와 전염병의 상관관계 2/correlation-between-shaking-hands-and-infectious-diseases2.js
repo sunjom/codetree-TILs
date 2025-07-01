@@ -20,13 +20,14 @@ for(let meets of shakes){
     
     if((Person[person1].inf == 1 && Person[person1].meet < k)){
         Person[person2].inf = 1;
-        Person[person2].meet--;
+        Person[person1].meet++;
     }else if((Person[person2].inf == 1 && Person[person2].meet < k)){
         Person[person1].inf = 1;
-        Person[person1].meet--;
+        Person[person2].meet++;
+    }else{
+        Person[person1].meet++;
+        Person[person2].meet++;
     }
-    Person[person1].meet++;
-    Person[person2].meet++;
 }
 
 let str = '';
