@@ -17,16 +17,18 @@ Person[p] = {inf:1,meet:0};
 shakes.sort((prev,cur) => prev.time - cur.time);
 for(let meets of shakes){
     const {person1,person2} = meets; 
-    
-    if((Person[person1].inf == 1 && Person[person1].meet < k)){
+    if(Person[person1].inf == 1){
+        Person[person1].meet++;
+    }
+    if(Person[person2].inf == 1){
+        Person[person2].meet++;
+    }
+
+    if(Person[person1].inf == 1 && Person[person1].meet <= k){''
         Person[person2].inf = 1;
-        Person[person1].meet++;
-    }else if((Person[person2].inf == 1 && Person[person2].meet < k)){
+    }
+    if(Person[person2].inf == 1 && Person[person2].meet <= k){
         Person[person1].inf = 1;
-        Person[person2].meet++;
-    }else{
-        Person[person1].meet++;
-        Person[person2].meet++;
     }
 }
 
