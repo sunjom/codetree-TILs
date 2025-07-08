@@ -12,8 +12,8 @@ c = Number(c) - 1;
 const xList = [0,1,-1,0];
 const yList = [1,0,0,-1];
 const dir = {
-    'U':1,
-    'D':2,
+    'U':2,
+    'D':1,
     'R':0,
     'L':3,
 }
