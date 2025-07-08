@@ -12,10 +12,10 @@ c = Number(c) - 1;
 const xList = [0,1,-1,0];
 const yList = [1,0,0,-1];
 const dir = {
-    'U':3,
-    'D':1,
+    'U':1,
+    'D':2,
     'R':0,
-    'L':2,
+    'L':3,
 }
 
 
