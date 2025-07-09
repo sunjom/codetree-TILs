@@ -17,7 +17,7 @@ for(let i = 0 ; i < commands.length ; i++){
     if(commands[i] == 'F'){
         x += xList[dir]; y += yList[dir];
     }else if(commands[i] == 'L'){
-        dir = (3 - dir) % 4;
+        dir = (dir + 3) % 4;
     }else{
         dir = (dir + 1) % 4;
     }
