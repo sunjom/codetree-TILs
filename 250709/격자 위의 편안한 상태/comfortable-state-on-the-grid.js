@@ -40,7 +40,7 @@ for(let i = 0 ; i < m ; i++){
             count++;
         }
     }
-    if(count >= 3){
+    if(count == 3){
         console.log(1);
     }else{
         console.log(0);
